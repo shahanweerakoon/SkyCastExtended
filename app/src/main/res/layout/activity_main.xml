@@ -84,35 +84,83 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:background="@color/light_green"
-            android:padding="10dp">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/locationText"
-                android:layout_width="400px"
-                android:layout_height="70px"
-                android:text="location :"
-                android:textSize="50px"
-                android:textColor="@color/silver"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
+            <LinearLayout
+                android:id="@+id/locationLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/light_green"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true">
 
-            <TextView
-                android:id="@+id/location"
-                android:layout_width="400px"
-                android:layout_height="90px"
-                android:text=""
-                android:textSize="50px"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
+                <TextView
+                    android:id="@+id/locationText"
+                    android:layout_width="400px"
+                    android:layout_height="70px"
+                    android:text="location :"
+                    android:textSize="50px"
+                    android:textColor="@color/silver"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="400px"
+                    android:layout_height="90px"
+                    android:text=""
+                    android:textSize="50px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/light_green"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/timeText"
+                    android:layout_width="400px"
+                    android:layout_height="70px"
+                    android:text="time :"
+                    android:textSize="50px"
+                    android:textColor="@color/silver"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="400px"
+                    android:layout_height="90px"
+                    android:text="02:25 pm"
+                    android:textSize="50px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
